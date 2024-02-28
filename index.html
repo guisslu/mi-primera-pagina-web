@@ -3,55 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo HTML y CSS</title>
+    <title>Guisell Lorena Uyaque Urbina - Portafolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f8f1e5; /* Fondo principal */
         }
-
         header {
-            background-color: #333;
-            color: white;
             text-align: center;
-            padding: 10px;
+            margin-bottom: 30px;
         }
-
+        h1 {
+            color: #6d6875; /* Tono de púrpura */
+            margin: 10px 0;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #775b6e; /* Tono de gris púrpura */
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease-in-out;
+        }
+        nav a:hover {
+            color: #3498db; /* Azul */
+        }
         section {
             max-width: 800px;
-            margin: 20px auto;
+            margin: 0 auto 40px;
             padding: 20px;
-            background-color: #fff;
+            border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        #about {
+            background-color: #f8e2e2; /* Gris claro */
+        }
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        #about img {
+        max-width: 20%;
+        height: auto;
+        border-radius: 95%;
+        margin-top: 20px;
+        }
+
+        #skills {
+            background-color: #d9ead3; /* Verde claro */
+        }
+        #projects {
+            background-color: #ead1dc; /* Rosa claro */
+        }
+        #contact {
+            background-color: #d2e4fc; /* Azul claro */
+        }
+        h2 {
+            color: #6d6875;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #635d6d;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Mi Página Web</h1>
+        <h1>Guisell Lorena Uyaque Urbina</h1>
+        <nav>
+            <a href="#about">Acerca de mí</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#contact">Contacto</a>
+        </nav>
     </header>
 
-    <section>
-        <h2>Contenido Principal</h2>
-        <p>¡Hola, este es un ejemplo básico de HTML y CSS!</p>
+    <section id="about">
+         <img src="https://media.istockphoto.com/id/960937636/es/foto/manos-de-mujer-codificaci%C3%B3n-html-y-la-programaci%C3%B3n-en-desarrollador-de-pantalla-port%C3%A1til-web.webp?s=1024x1024&w=is&k=20&c=-cy9gQu4Xhv9oykjYDBTjMYwp6BMsl85TYgKX9jU5Xo=" alt="imagen de cabecera">
+        <h2>Acerca de mí</h2>
+        <p>Tengo 21 años y soy una entusiasta programadora web con experiencia en CSS, HTML, JavaScript y C#. Mi objetivo es crear experiencias digitales impactantes y funcionales que cumplan con los más altos estándares de calidad.</p>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Mi Página Web</p>
-    </footer>
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>C#</li>
+            <!-- Agrega más habilidades según sea necesario -->
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <p>Aquí puedes encontrar algunos de los proyectos en los que he trabajado. </p>
+        <!-- Agrega información y enlaces a tus proyectos -->
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Puedes contactarme a través de mi correo electrónico: tucorreo@example.com</p>
+        <!-- Agrega más información de contacto según sea necesario -->
+    </section>
 
 </body>
 </html>
